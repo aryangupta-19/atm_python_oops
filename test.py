@@ -15,4 +15,4 @@ source .venv/bin/activate
 
 # Method is a special function written inside a class 
 
-
+# Lets Start with Encapsulation now 

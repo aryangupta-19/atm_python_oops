@@ -69,3 +69,10 @@ class Atm:
 
 # self is actually the object -> means self ka address = sbi ka address 
 # also self ka address vahi hota hai jis object ke sath hum abi kam kr rhe hai 
+
+# Why self is required -> we know each class have data attributes + method also we know methods of particular class can be accesed by only that class's object also note one method of class can't access other method of same class
+# therefore we use self as object so that different methods to same class can access eachother 
+
+# Python can't store numbers in fractional it converts all fraction into decimal 
+# Now we will make a class that will store fractions 
+
