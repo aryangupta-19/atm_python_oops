@@ -16,3 +16,5 @@ source .venv/bin/activate
 # Method is a special function written inside a class 
 
 # Lets Start with Encapsulation now 
+# Note first of all in python to make private variables in class -> __varname
+# Lets make our __pin and __balance private so that no one can access it outside class 
