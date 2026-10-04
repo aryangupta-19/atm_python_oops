@@ -1,6 +1,6 @@
 class Atm:
     # Here in python can declare variable in method only not outside like c++
-    def __init__(self):         # In python constructor's name is fixed __init__, constuctor is a magic method -> (__abc___)
+    def __init__(self):         # In python constructor's name is fixed __init__, constuctor is a magic_method -> (__abc___)
         self.__pin = ""
         self.__balance = 0
         self.menu()
@@ -13,7 +13,6 @@ class Atm:
         print("Pin Changed")
     
     def menu(self):
-        # while True:
             user_input = input("""
                     Hello would You like to proceed?
                     1) Enter 1 to create __pin
@@ -71,14 +70,14 @@ class Atm:
 # Now if created sbi = Atm() and deposit 100 also created hdfc = Atm() then deposited 200 
 # sbi.check___balance() will give 100 and hdfc.check___balance() gives 200 though there is only one variable __balance but here all instances have their own __balance attribute or field 
 
-# Note magic_methods (__m__) all magic methods are auto invoked they are not invoked manually by object
+# Note magic_methods (__m__) all magic methods are auto invoked they are not invoked manually by object.
 # We generally add things in constructor for which we can't rely on user, user can't access and control these things, in contructor we try to add functionality which we want to auto execute without user's interference  
 
 # self is actually the object -> means self ka address = sbi ka address 
-# also self ka address vahi hota hai jis object ke sath hum abi kam kr rhe hai 
+# also self ka address vahi hota hai jis object ke sath hum currently kam kr rhe hai 
 
 # Why self is required -> we know each class have data attributes + method also we know methods of particular class can be accesed by only that class's object also note one method of class can't access other method of same class
-# therefore we use self as object so that different methods to same class can access eachother 
+# therefore we use self as object so that different methods to same class can access eachother like we called self.menu at end of constructor and each method 
 
 # Python can't store numbers in fractional it converts all fraction into decimal 
 # Now we will make a class that will store fractions 
@@ -86,7 +85,7 @@ class Atm:
 # Note first of all in python to make private variables in class -> __varname
 # Lets make our __pin and __balance private so that no one can access it outside class 
 
-# How it hides -> see python converts it intenally to _Atm__pin
+# How it hides -> see python converts it internally to _Atm__pin
 # sbi.__balance = 10 -> will create a new variable __balance but all out methods are using _atm__balance so no problem with creation of this variable
 
 # but sbi._Atm__balance = 100 will actually save 100 in balance -> hence nothing in python is truely private one can access pvt variables using _className__variables 
